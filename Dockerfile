@@ -9,6 +9,6 @@ COPY --from=alpine /etc/mime.types /etc/mime.types
 VOLUME /srv
 EXPOSE 8082
 
-COPY filebrowser /filebrowser
+COPY filebrowser /
 
 CMD [ "/filebrowser","-d","/config/filebrowser-users.db","-c","/config/.filebrowser.json" ]
